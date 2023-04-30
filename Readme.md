@@ -28,7 +28,11 @@ Particle Swarm Optimization (PSO) is a popular optimization technique inspired b
 
 Image segmentation is the process of partitioning an image into multiple segments or regions based on certain criteria, such as color, texture, or intensity. It is a fundamental task in computer vision, and it has various applications, including object recognition, image analysis, and medical imaging.
 
-PSO can be used for image segmentation because it is a powerful optimization technique that can find the optimal segmentation parameters by searching the solution space efficiently. PSO-based image segmentation algorithms typically define the fitness function based on the similarity of the segmente
+PSO can be used for image segmentation because it is a powerful optimization technique that can find the optimal segmentation parameters by searching the solution space efficiently. PSO-based image segmentation algorithms typically define the fitness function based on the similarity of the segmented
+
+`<img src='assets/WDPM.png'>`
+
+<hr>
 
 ## 🔑 Prerequisites
 
@@ -91,6 +95,16 @@ pip3 install -r requirements.txt
    docker run -it --rm -p 5000:5000 chagantireddy/ispso:latest
    ```
 
+## Results
+
+`<img src='assets/color.png>`
+
+`<br>`
+
+`<img src='assets/gray.png'>`
+
+<hr>
+
 ## Directory Tree
 
 ```bash
@@ -116,9 +130,7 @@ pip3 install -r requirements.txt
 
 ## Technologies Used
 
-![](https://forthebadge.com/images/badges/made-with-python.svg)
-
-[`<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>`](https://flask.palletsprojects.com/en/1.1.x/) [`<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>`](https://scikit-learn.org/stable/)
+![img](https://forthebadge.com/images/badges/made-with-python.svg)
 
 ## Future Scope
 
