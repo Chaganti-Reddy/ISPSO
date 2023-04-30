@@ -1,0 +1,5 @@
+numpy
+opencv-python
+flask
+pyswarm 
+scikit-learn
