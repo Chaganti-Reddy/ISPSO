@@ -158,7 +158,7 @@ Gray Scale Image
 
 ## Technologies Used
 
-[<img target="_blank" src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" width=170>](https://numpy.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width=170>](https://www.python.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/flask/flask-ar21.svg" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" width=170>](https://www.docker.com/)[<img target="_blank" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" width=170>](https://git-scm.com/)
+[<img target="_blank" src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" width=170>](https://numpy.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width=170>](https://www.python.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" width=170>](https://www.docker.com/)[<img target="_blank" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" width=170>](https://git-scm.com/)
 
 ## Future Scope
 
