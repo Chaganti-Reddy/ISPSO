@@ -50,7 +50,7 @@ def perform_pso_optimization(pixels, num_centroids, num_particles):
     lower_bound = np.zeros(pixels.shape[1] * num_centroids)
     upper_bound = np.ones(pixels.shape[1] * num_centroids) * 255
     result, _ = pso(objective_function, lower_bound,
-                    upper_bound, args=(pixels,), swarmsize=num_particles)
+                    upper_bound, args=(pixels,), swarmsize=num_particles, maxiter=200, debug=True)
     # Reshape the optimized result to get the final centroids
     if pixels.shape[1] == 3:
         centroids = result.reshape(-1, 3)
