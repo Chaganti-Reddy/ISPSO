@@ -10,6 +10,7 @@
   - [📖 Data Preprocessing](#book-data-preprocessing)
   - [🚀  Installation](#-installation)
     - [💡 How to Run](#bulb-how-to-run)
+  - [Results](#results)
   - [Directory Tree](#directory-tree)
   - [Technologies Used](#technologies-used)
   - [Future Scope](#future-scope)
@@ -30,13 +31,37 @@ Image segmentation is the process of partitioning an image into multiple segment
 
 PSO can be used for image segmentation because it is a powerful optimization technique that can find the optimal segmentation parameters by searching the solution space efficiently. PSO-based image segmentation algorithms typically define the fitness function based on the similarity of the segmented
 
-`<img src='assets/WDPM.png'>`
+<img src="assets/WDPM.png"  width="400" height="300">
+
+Velocity Vector Update Equation:
+
+$$
+\begin{equation}
+\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + c_1 rand() (\mathbf{p_{id}}_{i} - \mathbf{x_{id}}(t)) + c_2 rand() (\mathbf{v_{gd}}_{g} - \mathbf{x_{gd}}(t))
+\end{equation}
+$$
+
+Position Vector Update Equation:
+
+$$
+\begin{equation}
+\mathbf{x_{id}}(t+1) = \mathbf{x_{id}}(t) + \mathbf{v_{id}}(t+1)
+\end{equation}
+$$
+
+Inertia Weight:
+
+$$
+\begin{equation}
+w = w_{max} - \frac{w_{max} - w_{min}}{iter_{max}} \times iter
+\end{equation}
+$$
 
 <hr>
 
 ## 🔑 Prerequisites
 
-All the dependencies and required libraries are included in the file `<code>`requirements.txt `</code>` [See here](requirements.txt)
+All the dependencies and required libraries are included in the file <code>requirements.txt </code> [See here](requirements.txt)
 
 ## 📖 Data Preprocessing
 
@@ -72,7 +97,6 @@ python3 -m virtualenv my_env
 source my_env/bin/activate
 
 pip3 install -r requirements.txt
-
 ```
 
 ### 💡 How to Run
@@ -97,11 +121,15 @@ pip3 install -r requirements.txt
 
 ## Results
 
-`<img src='assets/color.png>`
+Color Image
 
-`<br>`
+<img src='assets/color.png' height=300 width=450>
 
-`<img src='assets/gray.png'>`
+<br>
+
+Gray Scale Image
+
+<img src='assets/gray.png' height=300 width=450>
 
 <hr>
 
@@ -130,7 +158,7 @@ pip3 install -r requirements.txt
 
 ## Technologies Used
 
-![img](https://forthebadge.com/images/badges/made-with-python.svg)
+[<img target="_blank" src="https://www.vectorlogo.zone/logos/numpy/numpy-ar21.svg" width=170>](https://numpy.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/python/python-ar21.svg" width=170>](https://www.python.org/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/flask/flask-ar21.svg" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" width=170>](https://www.docker.com/)[<img target="_blank" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" width=170>](https://git-scm.com/)
 
 ## Future Scope
 
@@ -162,4 +190,4 @@ Made with ❤️&nbsp; by [Chaganti Reddy](https://github.com/Chaganti-Reddy/)
 
 ## 👀 License
 
-MIT © [Chaganti Reddy](https://github.com/Chaganti-Reddy/Flight-Fare-Prediction/blob/main/LICENSE)
+MIT © [Chaganti Reddy](https://github.com/Chaganti-Reddy/ISPSO/blob/main/LICENSE)
