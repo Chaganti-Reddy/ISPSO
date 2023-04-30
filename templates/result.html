@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Segmentation Result</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin: 1em 0;
+            text-align: center;
+        }
+
+        .container {
+            margin: 2em auto;
+            max-width: 800px;
+            padding: 1em;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+        }
+
+        .image-container__image {
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+            height: auto;
+            max-width: 100%;
+            padding: 1em;
+        }
+
+        .image-container__label {
+            color: #333;
+            font-size: 1.2em;
+            margin-right: 1em;
+            text-align: center;
+            width: 50%;
+        }
+
+        .image-container__label--original {
+            margin-right: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Segmentation Result</h1>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-container__label image-container__label--original">Original Image</div>
+            <img class="image-container__image" src="{{ original_image_path }}"
+                alt="Original Image">
+        </div>
+        <div class="image-container">
+            <div class="image-container__label">Segmented Image</div>
+            <img class="image-container__image" src="{{ segmented_image_path }}"
+                alt="Segmented Image">
+        </div>
+    </div>
+</body>
+
+</html>
