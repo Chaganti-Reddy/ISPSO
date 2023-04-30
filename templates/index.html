@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Segmentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .output {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .output img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Segmentation With PSO</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="image_file">Upload an image file:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+            <label for="color">Choose segmentation mode:</label>
+            <select id="color" name="color">
+                <option value="color">Color</option>
+                <option value="grayscale">Grayscale</option>
+            </select>
+            <label for="num_centroids">Number of centroids:</label>
+            <input type="number" id="num_centroids" name="num_centroids" min="1" max="10" required>
+            <!-- <label for="num_particles">Number of particles:</label>
+            <input type="number" id="num_particles" name="num_particles" min="1" max="100" required> -->
+            <button type="submit" value="Upload and Process">Segment Image</button>
+            <!-- <input type="submit" value="Upload and Process"> -->
+        </form>
+
+        {% if error %}
+        <p class="output" style="color: red">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>
