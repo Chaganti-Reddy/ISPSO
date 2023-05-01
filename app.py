@@ -89,7 +89,6 @@ def image_segmentation():
         num_centroids = int(request.form['num_centroids'])
         num_particles = num_centroids * 3
         color = True if request.form.get('color') == 'color' else False
-        # color = True
         # Perform image segmentation
         # Example values for num_centroids and num_particles
         segmented_image = perform_image_segmentation(
