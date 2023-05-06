@@ -37,17 +37,11 @@ Velocity Vector Update Equation:
 
 $$
 \begin{equation}
-\mathbf{v_{id}}_{t+1} = w \mathbf{v_{id}}(t) + c_1 rand() \left(\mathbf{p_{id}}(t) - \mathbf{x_{id}}(t)\right) + c_2 rand() \left(\mathbf{v_{gd}}(t) - \mathbf{x_{gd}}(t)\right)
+\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + c_1 rand() \left( \mathbf{p_{id}}(t) - \mathbf{x_{id}}(t) \right) + c_2 rand() \left( \mathbf{v_{gd}}(t) - \mathbf{x_{gd}}(t) \right)
 \end{equation}
 $$
 
 Position Vector Update Equation:
-
-$$
-\begin{equation}
-\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + c_1 rand() \left( \mathbf{p_{id}}(t) - \mathbf{x_{id}}(t) \right) + c_2 rand() \left( \mathbf{v_{gd}}(t) - \mathbf{x_{gd}}(t) \right)
-\end{equation}
-$$
 
 $$
 \begin{equation}
