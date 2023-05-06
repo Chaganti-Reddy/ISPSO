@@ -49,6 +49,12 @@ $$
 \end{equation}
 $$
 
+$$
+\begin{equation}
+\mathbf{x_{id}}(t+1) = \mathbf{x_{id}}(t) + \mathbf{v_{id}}(t+1)
+\end{equation}
+$$
+
 Inertia Weight:
 
 $$
