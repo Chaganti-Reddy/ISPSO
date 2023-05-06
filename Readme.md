@@ -45,7 +45,7 @@ Position Vector Update Equation:
 
 $$
 \begin{equation}
-\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + \mathbf{v_{id}}(t+1)
+\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + c_1 rand() (\mathbf{p_{id}}_{i} - \mathbf{v_{id}}(t+1)
 \end{equation}
 $$
 
