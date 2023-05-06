@@ -37,7 +37,7 @@ Velocity Vector Update Equation:
 
 $$
 \begin{equation}
-\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + c_1 rand() (\mathbf{p_{id}}_{i} - \mathbf{x_{id}}(t)) + c_2 rand() (\mathbf{v_{gd}}_{g} - \mathbf{x_{gd}}(t))
+\mathbf{v_{id}}(t+1) = \mathbf{w v_{id}}(t) + c_1 rand() (\mathbf{p_{id}}_{i} - \mathbf{x_{id}}(t)) + c_2 rand() (\mathbf{v_{gd}}_{g} - \mathbf{x_{gd}}(t))
 \end{equation}
 $$
 
