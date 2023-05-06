@@ -45,7 +45,7 @@ Position Vector Update Equation:
 
 $$
 \begin{equation}
-\mathbf{x_{id}}(t+1) = \mathbf{x_{id}}(t) + \mathbf{v_{id}}(t+1)
+\mathbf{v_{id}}(t+1) = w \mathbf{v_{id}}(t) + \mathbf{v_{id}}(t+1)
 \end{equation}
 $$
 
