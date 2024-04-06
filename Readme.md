@@ -1,4 +1,4 @@
-# Image Segmentation Using PSO:
+# Image Segmentation Using PSO
 
 ## Table of Content
 
